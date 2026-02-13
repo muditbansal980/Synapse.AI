@@ -1,5 +1,6 @@
 import  { useRef, useEffect, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
+import { NavLink } from 'react-router-dom';
 import { Points, PointMaterial, Sphere, MeshDistortMaterial } from '@react-three/drei';
 import * as THREE from 'three';
 
@@ -217,12 +218,12 @@ const LandingPage = ({ onNavigate }) => {
                 className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white font-bold text-lg rounded-full overflow-hidden transition-all duration-300 hover:scale-105"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <span className="relative flex items-center gap-2">
+                <NavLink to ="/home"><span className="relative flex items-center gap-2">
                   Get Started
                   <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
-                </span>
+                </span></NavLink>
               </button>
               
               <button className="px-8 py-4 bg-white/10 backdrop-blur-lg border border-white/20 text-white font-bold text-lg rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-105">

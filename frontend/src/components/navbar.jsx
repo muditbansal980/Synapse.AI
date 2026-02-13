@@ -86,7 +86,7 @@ const Navbar = () => {
             <button className="relative px-6 py-2.5 font-semibold text-white overflow-hidden rounded-lg group">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600"></div>
               <div className="absolute inset-0 bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-              <span className="relative flex items-center gap-2">
+              <NavLink to="/home"><span className="relative flex items-center gap-2">
                 Get Started
                 <svg
                   className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300"
@@ -101,7 +101,7 @@ const Navbar = () => {
                     d="M13 7l5 5m0 0l-5 5m5-5H6"
                   />
                 </svg>
-              </span>
+              </span></NavLink>
             </button>
           </div>
 
