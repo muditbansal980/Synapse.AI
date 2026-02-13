@@ -219,11 +219,11 @@ const Navbar = () => {
             </div></NavLink>
           </div>
 
-          <div className="pt-3">
+          <NavLink to="/home"><div className="pt-3">
             <button className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-[1.02]">
               Get Started
             </button>
-          </div>
+          </div></NavLink>
         </div>
       </div>
     </nav>
