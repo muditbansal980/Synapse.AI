@@ -16,8 +16,8 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${scrolled
-          ? 'bg-gradient-to-r from-gray-900 via-purple-900 to-gray-900 shadow-2xl shadow-purple-500/20'
-          : 'bg-gradient-to-r from-gray-900/95 via-purple-900/95 to-gray-900/95 backdrop-blur-md'
+        ? 'bg-gradient-to-r from-gray-900 via-purple-900 to-gray-900 shadow-2xl shadow-purple-500/20'
+        : 'bg-gradient-to-r from-gray-900/95 via-purple-900/95 to-gray-900/95 backdrop-blur-md'
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -132,93 +132,93 @@ const Navbar = () => {
           }`}
       >
         <div className="px-4 pt-2 pb-4 space-y-2 bg-gradient-to-b from-black/50 to-transparent backdrop-blur-lg border-t border-white/10">
-          
-            <div
-              
-              className="block px-4 py-3 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-blue-600/30 hover:via-purple-600/30 hover:to-pink-600/30 transition-all duration-300 transform hover:translate-x-2"
-              onClick={() => setIsOpen(false)}
-            >
-              <div className="flex items-center justify-between">
-                <span>Contests</span>
-                <svg
-                  className="w-5 h-5 text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </div>
-            <div
-              
-              className="block px-4 py-3 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-blue-600/30 hover:via-purple-600/30 hover:to-pink-600/30 transition-all duration-300 transform hover:translate-x-2"
-              onClick={() => setIsOpen(false)}
-            >
-              <div className="flex items-center justify-between">
-                <span>Profile</span>
-                <svg
-                  className="w-5 h-5 text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </div>
-            <div
-              
-              className="block px-4 py-3 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-blue-600/30 hover:via-purple-600/30 hover:to-pink-600/30 transition-all duration-300 transform hover:translate-x-2"
-              onClick={() => setIsOpen(false)}
-            >
-              <div className="flex items-center justify-between">
-                <span>Home</span>
-                <svg
-                  className="w-5 h-5 text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </div>
-            <div
-              
-              className="block px-4 py-3 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-blue-600/30 hover:via-purple-600/30 hover:to-pink-600/30 transition-all duration-300 transform hover:translate-x-2"
-              onClick={() => setIsOpen(false)}
-            >
-              <div className="flex items-center justify-between">
-                <span>Previous Activity</span>
-                <svg
-                  className="w-5 h-5 text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </div>
-            <div
-              
-              className="block px-4 py-3 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-blue-600/30 hover:via-purple-600/30 hover:to-pink-600/30 transition-all duration-300 transform hover:translate-x-2"
-              onClick={() => setIsOpen(false)}
-            >
-              <div className="flex items-center justify-between">
-                <span>Record</span>
-                <svg
-                  className="w-5 h-5 text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </div>
-          
+
+          <div
+
+            className="block px-4 py-3 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-blue-600/30 hover:via-purple-600/30 hover:to-pink-600/30 transition-all duration-300 transform hover:translate-x-2"
+            onClick={() => setIsOpen(false)}
+          >
+            <NavLink to="/contests"><div className="flex items-center justify-between">
+              <span>Contests</span>
+              <svg
+                className="w-5 h-5 text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </div></NavLink>
+          </div>
+          <div
+
+            className="block px-4 py-3 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-blue-600/30 hover:via-purple-600/30 hover:to-pink-600/30 transition-all duration-300 transform hover:translate-x-2"
+            onClick={() => setIsOpen(false)}
+          >
+            <NavLink to="/profile"><div className="flex items-center justify-between">
+              <span>Profile</span>
+              <svg
+                className="w-5 h-5 text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </div></NavLink>
+          </div>
+          <div
+
+            className="block px-4 py-3 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-blue-600/30 hover:via-purple-600/30 hover:to-pink-600/30 transition-all duration-300 transform hover:translate-x-2"
+            onClick={() => setIsOpen(false)}
+          >
+            <NavLink to="/home"><div className="flex items-center justify-between">
+              <span>Home</span>
+              <svg
+                className="w-5 h-5 text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </div></NavLink>
+          </div>
+          <div
+
+            className="block px-4 py-3 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-blue-600/30 hover:via-purple-600/30 hover:to-pink-600/30 transition-all duration-300 transform hover:translate-x-2"
+            onClick={() => setIsOpen(false)}
+          >
+            <NavLink to="/previous-activity"><div className="flex items-center justify-between">
+              <span>Previous Activity</span>
+              <svg
+                className="w-5 h-5 text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </div></NavLink>
+          </div>
+          <div
+
+            className="block px-4 py-3 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-blue-600/30 hover:via-purple-600/30 hover:to-pink-600/30 transition-all duration-300 transform hover:translate-x-2"
+            onClick={() => setIsOpen(false)}
+          >
+            <NavLink to="/record"><div className="flex items-center justify-between">
+              <span>Record</span>
+              <svg
+                className="w-5 h-5 text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </div></NavLink>
+          </div>
+
           <div className="pt-3">
             <button className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-[1.02]">
               Get Started
