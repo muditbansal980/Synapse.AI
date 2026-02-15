@@ -124,7 +124,7 @@ const Profile = () => {
               <div className="flex flex-col md:flex-row md:items-end md:space-x-6">
                 <div className="relative group">
                   <div className="w-40 h-40 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center text-white text-5xl font-bold shadow-2xl border-4 border-gray-900">
-                    AJ
+                    R
                   </div>
                   <button className="absolute bottom-2 right-2 w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center text-white border-2 border-gray-900 transition-all">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
