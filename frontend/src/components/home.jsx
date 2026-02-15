@@ -83,11 +83,11 @@ const Dashboard = () => {
     ];
 
     const notifications = [
-        { id: 1, text: 'New achievement unlocked!', time: '2m ago', type: 'success' },
-        { id: 2, text: 'Your ranking improved to #12', time: '15m ago', type: 'info' },
-        { id: 3, text: 'New message from admin', time: '1h ago', type: 'message' },
-        { id: 4, text: 'Weekly report is ready', time: '2h ago', type: 'info' },
-        { id: 5, text: 'System maintenance scheduled', time: '3h ago', type: 'warning' }
+        { id: 1, text: 'New message', time: '2m ago', type: 'success' },
+        { id: 2, text: 'New message', time: '15m ago', type: 'info' },
+        { id: 3, text: 'New message', time: '1h ago', type: 'message' },
+        { id: 4, text: 'New Message', time: '2h ago', type: 'info' },
+        { id: 5, text: 'New Message', time: '3h ago', type: 'warning' }
     ];
 
     return (
@@ -303,33 +303,6 @@ const Dashboard = () => {
                                                 <p className="text-sm text-gray-400">Rank #{user.rank}</p>
                                             </div>
                                         </div>
-
-                                        {/* Score and Change */}
-                                        {/* <div className="flex items-center space-x-6">
-                                            <div className="text-right">
-                                                <p className="text-2xl font-bold text-white">
-                                                    {user.score.toLocaleString()}
-                                                </p>
-                                                <p className="text-sm text-gray-400">points</p>
-                                            </div>
-
-                                            {/* Trend */}
-                                            {/* <div className={`flex items-center space-x-1 px-3 py-1 rounded-full ${user.trend === 'up'
-                                                    ? 'bg-green-500/20 text-green-400'
-                                                    : 'bg-red-500/20 text-red-400'
-                                                }`}>
-                                                {user.trend === 'up' ? (
-                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
-                                                    </svg>
-                                                ) : (
-                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                                                    </svg>
-                                                )}
-                                                <span className="font-semibold">{user.change}</span>
-                                            </div>
-                                        </div> */} 
                                     </div>
                                 </div>
                             ))}

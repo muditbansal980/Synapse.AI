@@ -10,8 +10,8 @@ const ContestsDashboard = () => {
   const contests = [
     {
       id: 1,
-      name: 'LeetCode Weekly Contest 378',
-      platform: 'LeetCode',
+      name: 'Jump and touch sky',
+      platform: 'High Jumping',
       status: 'ongoing',
       startTime: new Date(Date.now() - 30 * 60000), // Started 30 min ago
       endTime: new Date(Date.now() + 90 * 60000), // Ends in 90 min
@@ -25,8 +25,8 @@ const ContestsDashboard = () => {
     },
     {
       id: 2,
-      name: 'Codeforces Round 920 (Div. 2)',
-      platform: 'Codeforces',
+      name: 'Run for fun',
+      platform: 'Sprint',
       status: 'ongoing',
       startTime: new Date(Date.now() - 45 * 60000),
       endTime: new Date(Date.now() + 75 * 60000),
@@ -40,8 +40,8 @@ const ContestsDashboard = () => {
     },
     {
       id: 3,
-      name: 'Google Kickstart Round H',
-      platform: 'Google',
+      name: 'RoundAbout The World',
+      platform: 'Marathon',
       status: 'upcoming',
       startTime: new Date(Date.now() + 2 * 60 * 60000), // In 2 hours
       endTime: new Date(Date.now() + 5 * 60 * 60000),
@@ -53,81 +53,6 @@ const ContestsDashboard = () => {
       color: 'from-red-500 to-red-600',
       icon: '🏆'
     },
-    {
-      id: 4,
-      name: 'CodeChef Starters 115',
-      platform: 'CodeChef',
-      status: 'upcoming',
-      startTime: new Date(Date.now() + 4 * 60 * 60000),
-      endTime: new Date(Date.now() + 7 * 60 * 60000),
-      duration: '3 hours',
-      participants: 6543,
-      difficulty: 'Medium',
-      prize: 'Laddus',
-      registered: true,
-      color: 'from-orange-600 to-orange-700',
-      icon: '👨‍🍳'
-    },
-    {
-      id: 5,
-      name: 'AtCoder Beginner Contest 335',
-      platform: 'AtCoder',
-      status: 'upcoming',
-      startTime: new Date(Date.now() + 24 * 60 * 60000), // Tomorrow
-      endTime: new Date(Date.now() + 26 * 60 * 60000),
-      duration: '2 hours',
-      participants: 9876,
-      difficulty: 'Easy',
-      prize: 'Rating Points',
-      registered: false,
-      color: 'from-gray-500 to-gray-600',
-      icon: '🎯'
-    },
-    {
-      id: 6,
-      name: 'HackerRank Weekly Challenge',
-      platform: 'HackerRank',
-      status: 'upcoming',
-      startTime: new Date(Date.now() + 6 * 60 * 60000),
-      endTime: new Date(Date.now() + 9 * 60 * 60000),
-      duration: '3 hours',
-      participants: 7234,
-      difficulty: 'Medium',
-      prize: '$1,000',
-      registered: false,
-      color: 'from-green-500 to-green-600',
-      icon: '💚'
-    },
-    {
-      id: 7,
-      name: 'TopCoder SRM 815',
-      platform: 'TopCoder',
-      status: 'upcoming',
-      startTime: new Date(Date.now() + 8 * 60 * 60000),
-      endTime: new Date(Date.now() + 10 * 60 * 60000),
-      duration: '2 hours',
-      participants: 5432,
-      difficulty: 'Hard',
-      prize: '$5,000',
-      registered: true,
-      color: 'from-purple-500 to-purple-600',
-      icon: '🎪'
-    },
-    {
-      id: 8,
-      name: 'Meta Hacker Cup Qualification',
-      platform: 'Meta',
-      status: 'upcoming',
-      startTime: new Date(Date.now() + 48 * 60 * 60000), // In 2 days
-      endTime: new Date(Date.now() + 51 * 60 * 60000),
-      duration: '3 hours',
-      participants: 18765,
-      difficulty: 'Hard',
-      prize: '$10,000',
-      registered: false,
-      color: 'from-blue-600 to-blue-700',
-      icon: '📘'
-    }
   ];
 
   // Countdown Timer Hook
@@ -291,9 +216,9 @@ const ContestsDashboard = () => {
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-3">
-            Coding Contests
+            Contests
           </h1>
-          <p className="text-gray-400 text-lg">Never miss a coding competition again!</p>
+          <p className="text-gray-400 text-lg">Never miss a race again!</p>
         </div>
 
         {/* Stats Cards */}
@@ -374,7 +299,7 @@ const ContestsDashboard = () => {
             >
               {platforms.map(platform => (
                 <option key={platform} value={platform} className="bg-gray-900">
-                  {platform === 'all' ? 'All Platforms' : platform}
+                  {platform === 'all' ? 'Type' : platform}
                 </option>
               ))}
             </select>

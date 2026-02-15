@@ -45,7 +45,7 @@ const Navbar = () => {
                 </div>
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                NexaFlow
+                SprintLens
               </span>
             </div>
           </div>

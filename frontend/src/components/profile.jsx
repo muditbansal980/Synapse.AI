@@ -6,54 +6,43 @@ const Profile = () => {
 
   // Profile Data
   const [profileData, setProfileData] = useState({
-    name: 'Alex Johnson',
-    title: 'Full Stack Developer | Competitive Programmer',
-    bio: 'Passionate software engineer with 5+ years of experience in web development and competitive programming. Love solving complex problems and building scalable applications.',
-    location: 'San Francisco, CA',
-    email: 'alex.johnson@example.com',
-    phone: '+1 (555) 123-4567',
-    website: 'www.alexjohnson.dev',
-    github: 'github.com/alexjohnson',
-    linkedin: 'linkedin.com/in/alexjohnson'
+    name: 'Rahul',
+    title: 'Sprinter',
+    bio: '...',
+    location: '...',
+    email: 'rahul@example.com',
+    phone: '...',
+
   });
 
   // Contest Performances
   const [contests, setContests] = useState([
     {
       id: 1,
-      name: 'Google Code Jam 2024',
+      name: 'A',
       rank: 145,
       participants: 25000,
-      date: 'Jan 2024',
+      date: 'Jan 2026',
       score: 9850,
       badge: 'from-yellow-500 to-orange-500'
     },
     {
       id: 2,
-      name: 'Meta Hacker Cup',
+      name: 'B',
       rank: 89,
       participants: 18000,
-      date: 'Dec 2023',
+      date: 'Dec 2026',
       score: 8920,
       badge: 'from-blue-500 to-blue-600'
     },
     {
       id: 3,
-      name: 'Codeforces Round 912',
+      name: 'C',
       rank: 234,
       participants: 15000,
-      date: 'Nov 2023',
+      date: 'Feb 2026',
       score: 7650,
       badge: 'from-purple-500 to-purple-600'
-    },
-    {
-      id: 4,
-      name: 'LeetCode Weekly Contest 370',
-      rank: 67,
-      participants: 12000,
-      date: 'Oct 2023',
-      score: 9100,
-      badge: 'from-green-500 to-green-600'
     }
   ]);
 
@@ -61,63 +50,27 @@ const Profile = () => {
   const [certificates, setCertificates] = useState([
     {
       id: 1,
-      name: 'AWS Certified Solutions Architect',
-      issuer: 'Amazon Web Services',
-      date: 'Feb 2024',
-      credential: 'AWS-SA-2024-12345',
+      name: 'A',
+      issuer: 'X',
+      date: 'Feb 2026',
+      credential: 'A',
       color: 'from-orange-500 to-orange-600'
     },
     {
       id: 2,
-      name: 'Google Cloud Professional Developer',
-      issuer: 'Google Cloud',
-      date: 'Jan 2024',
-      credential: 'GCP-PD-2024-67890',
+      name: 'B',
+      issuer: 'B',
+      date: 'Jan 2026',
+      credential: 'X',
       color: 'from-blue-500 to-blue-600'
     },
     {
       id: 3,
-      name: 'Meta Frontend Developer Professional',
-      issuer: 'Meta (Coursera)',
-      date: 'Dec 2023',
-      credential: 'META-FE-2023-54321',
+      name: 'C',
+      issuer: 'C',
+      date: 'Dec 2026',
+      credential: 'Y',
       color: 'from-purple-500 to-purple-600'
-    }
-  ]);
-
-  // Skills
-  const [skills, setSkills] = useState([
-    { name: 'JavaScript', level: 95, color: 'bg-yellow-500' },
-    { name: 'React.js', level: 92, color: 'bg-blue-500' },
-    { name: 'Python', level: 88, color: 'bg-green-500' },
-    { name: 'Node.js', level: 85, color: 'bg-green-600' },
-    { name: 'Data Structures', level: 90, color: 'bg-purple-500' },
-    { name: 'Algorithms', level: 87, color: 'bg-pink-500' },
-    { name: 'System Design', level: 82, color: 'bg-indigo-500' },
-    { name: 'AWS', level: 78, color: 'bg-orange-500' }
-  ]);
-
-  // Experience
-  const [experience, setExperience] = useState([
-    {
-      id: 1,
-      title: 'Senior Software Engineer',
-      company: 'Tech Corp',
-      location: 'San Francisco, CA',
-      startDate: 'Jan 2022',
-      endDate: 'Present',
-      current: true,
-      description: 'Leading development of scalable web applications serving 10M+ users. Mentoring junior developers and conducting code reviews.'
-    },
-    {
-      id: 2,
-      title: 'Software Engineer',
-      company: 'StartupXYZ',
-      location: 'Remote',
-      startDate: 'Jun 2020',
-      endDate: 'Dec 2021',
-      current: false,
-      description: 'Developed and maintained microservices architecture. Improved API response time by 40%.'
     }
   ]);
 
@@ -125,30 +78,30 @@ const Profile = () => {
   const [education, setEducation] = useState([
     {
       id: 1,
-      degree: 'Master of Science in Computer Science',
-      school: 'Stanford University',
-      location: 'Stanford, CA',
-      startDate: '2018',
-      endDate: '2020',
-      gpa: '3.9/4.0'
+      degree: '---',
+      school: '---',
+      location: '---',
+      startDate: '---',
+      endDate: '---',
+      gpa: '---'
     },
     {
       id: 2,
-      degree: 'Bachelor of Science in Computer Engineering',
-      school: 'UC Berkeley',
-      location: 'Berkeley, CA',
-      startDate: '2014',
-      endDate: '2018',
-      gpa: '3.8/4.0'
+      degree: '---',
+      school: '---',
+      location: '---',
+      startDate: '---',
+      endDate: '---',
+      gpa: '---'
     }
   ]);
 
   // Achievements
   const achievements = [
-    { icon: '🏆', title: 'Top 1% on LeetCode', description: 'Solved 1000+ problems' },
-    { icon: '⭐', title: '5-Star Coder on HackerRank', description: 'Problem Solving' },
-    { icon: '🎯', title: 'Contest Master', description: 'Won 15+ coding competitions' },
-    { icon: '📚', title: 'Published Author', description: '3 technical articles' }
+    { icon: '🏆', title: 'Top 1% on LeaderBoard', description: '---' },
+    { icon: '⭐', title: 'POINT HOLDERS', description: '---' },
+    { icon: '🎯', title: 'Contest Master', description: '---' },
+    { icon: '🏆', title: 'WON X CONTESTS', description: '---' }
   ];
 
   return (
@@ -250,31 +203,7 @@ const Profile = () => {
             {/* Overview Tab */}
             {activeTab === 'overview' && (
               <>
-                {/* Skills */}
-                <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl p-6">
-                  <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                    </svg>
-                    Skills
-                  </h2>
-                  <div className="space-y-4">
-                    {skills.map((skill) => (
-                      <div key={skill.name}>
-                        <div className="flex justify-between mb-2">
-                          <span className="text-white font-medium">{skill.name}</span>
-                          <span className="text-gray-400">{skill.level}%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-2.5">
-                          <div
-                            className={`${skill.color} h-2.5 rounded-full transition-all duration-1000`}
-                            style={{ width: `${skill.level}%` }}
-                          ></div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                
 
                 {/* Achievements */}
                 <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl p-6">
@@ -403,40 +332,6 @@ const Profile = () => {
                 </div>
               </div>
             )}
-
-            {/* Experience Tab
-            {activeTab === 'experience' && (
-              <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl p-6">
-                <div className="flex justify-between items-center mb-6">
-                  <h2 className="text-2xl font-bold text-white flex items-center gap-2">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    Experience
-                  </h2>
-                  <button className="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-semibold transition-all">
-                    + Add Experience
-                  </button>
-                </div>
-                <div className="space-y-6">
-                  {experience.map((exp) => (
-                    <div key={exp.id} className="relative pl-8 pb-6 border-l-2 border-purple-500/30 last:pb-0">
-                      <div className="absolute -left-2 top-0 w-4 h-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
-                      <div className="bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-xl p-6 hover:from-white/15 hover:to-white/10 transition-all">
-                        <h3 className="text-xl font-bold text-white mb-1">{exp.title}</h3>
-                        <p className="text-lg text-purple-400 mb-2">{exp.company}</p>
-                        <div className="flex flex-wrap gap-3 text-sm text-gray-400 mb-3">
-                          <span>{exp.startDate} - {exp.current ? 'Present' : exp.endDate}</span>
-                          <span>•</span>
-                          <span>{exp.location}</span>
-                        </div>
-                        <p className="text-gray-300">{exp.description}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )} */}
 
             {/* Education Tab */}
             {activeTab === 'education' && (

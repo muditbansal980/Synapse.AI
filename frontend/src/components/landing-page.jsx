@@ -199,10 +199,10 @@ const LandingPage = ({ onNavigate }) => {
             <div className={`mb-8 transition-all duration-1000 delay-300 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
                 <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                  Code. Compete.
+                  Move. Real.
                 </span>
                 <span className="block bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
-                  Conquer.
+                  Score. Real.
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
@@ -234,10 +234,10 @@ const LandingPage = ({ onNavigate }) => {
             {/* Stats */}
             <div className={`grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto transition-all duration-1000 delay-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               {[
-                { number: '50K+', label: 'Active Users' },
-                { number: '500+', label: 'Contests Tracked' },
-                { number: '10+', label: 'Platforms' },
-                { number: '99.9%', label: 'Uptime' }
+                { number: 'XX+', label: 'Active Users' },
+                { number: 'XX+', label: 'Contests Tracked' },
+                { number: 'XX+', label: 'Platforms' },
+                { number: 'XX%', label: 'Uptime' }
               ].map((stat, index) => (
                 <div key={index} className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-2">
@@ -255,10 +255,10 @@ const LandingPage = ({ onNavigate }) => {
           <div className="max-w-7xl mx-auto">
             <div className={`text-center mb-16 transition-all duration-1000 delay-900 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
-                Why Choose CodeArena?
+                Why Choose Us?
               </h2>
               <p className="text-xl text-gray-400">
-                Everything you need to excel in competitive programming
+                Everything you need to upskill your performances
               </p>
             </div>
 
@@ -292,7 +292,7 @@ const LandingPage = ({ onNavigate }) => {
                 Ready to Start Your Journey?
               </h2>
               <p className="text-xl text-gray-300 mb-8">
-                Join thousands of developers already using CodeArena
+                Join thousands of players already using SprintLens
               </p>
               <button 
                 onClick={() => onNavigate?.('signup')}
@@ -308,7 +308,7 @@ const LandingPage = ({ onNavigate }) => {
         <footer className="px-6 py-8 border-t border-white/10">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © 2024 CodeArena. All rights reserved.
+              By QuantAthlete. All rights reserved.
             </p>
             <div className="flex gap-6">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy</a>
