@@ -1,6 +1,7 @@
 import  { useRef, useEffect, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { NavLink } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import { Points, PointMaterial, Sphere, MeshDistortMaterial } from '@react-three/drei';
 import * as THREE from 'three';
 
@@ -226,9 +227,9 @@ const LandingPage = ({ onNavigate }) => {
                 </span></NavLink>
               </button>
               
-              <button className="px-8 py-4 bg-white/10 backdrop-blur-lg border border-white/20 text-white font-bold text-lg rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-105">
+              <Link to="https://drive.google.com/file/d/14RXSeCoyxzU0cvA_BPUA_h3pb0pypbr_/view?usp=sharing"><button className="px-8 py-4 bg-white/10 backdrop-blur-lg border border-white/20 text-white font-bold text-lg rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-105">
                 Watch Demo
-              </button>
+              </button></Link>
             </div>
 
             {/* Stats */}
